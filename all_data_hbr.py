@@ -18,7 +18,7 @@ headers = {
     'Accept-Language': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7',
     'Cache-Control': 'max-age=0',
     'Connection': 'keep-alive',
-    'Cookie': '_ym_uid=1712729898894970247; _ym_d=1712729898; hl=ru; fl=ru; habr_uuid=bmQ4b3VSa2FVaml6d0JPYWozbFh0bFNMWUkxV3Q4MVAvUUhGY1Z3SGZqdnF2RWpSd0dXUkdKMXRRMjQxYS85dA%3D%3D; split_version=triger; habr_web_home_feed=/articles/; _ga_VMM2ZGEV9D=GS1.1.1713448168.1.0.1713448168.0.0.0; _ga_EDKVH06JKZ=GS1.1.1713447548.1.1.1713448661.0.0.0; visited_articles=504952:689520:810041:691876:493580:759164:743628:714266:590067; _ga_7JGBT7D9D9=GS1.1.1714117408.1.0.1714117408.0.0.0; _ga=GA1.1.1373680956.1712729898; _ym_isad=2; _ga_S28W1WC23F=GS1.1.1714416398.21.1.1714416436.22.0.1975883177',
+    'Cookie': '_ym_uid=1712729898894970247; _ym_d=1712729898; hl=ru; fl=ru;  habr_web_home_feed=/articles/;
     'DNT': '1',
     'Host': 'habr.com',
     'If-None-Match': 'W/"46ba7-l7AVnmsjclj6XMX51Ouyb/FMqkY"',
