@@ -60,7 +60,7 @@ def prt(url):
     textbox = customtkinter.CTkTextbox(root, border_width=3, height=700, font=('Times', 20))
     textbox.grid(row=0, column=1, padx=(20, 20), pady=(20, 0), sticky="nsew")
     textbox.grid_rowconfigure(4, weight=1)
-    textbox.insert('0.0', **text)
+    textbox.insert('0.0', *text)
     label = customtkinter.CTkLabel(root, text=url, font=('Times', 25))
     label.grid(row=1, column=1, padx=(20, 20), pady=(20, 20), sticky="sw")
     label.grid_rowconfigure(4, weight=1)
