@@ -23,6 +23,8 @@ class DatabaseManager(object):
                    link TEXT,
                    exception TEXT)
                     """)
+        self.query(
+            """CREATE INDEX idx_title ON news(title)""")
         return True
 
     def connection(self):

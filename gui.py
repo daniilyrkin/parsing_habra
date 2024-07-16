@@ -1,5 +1,4 @@
 import customtkinter
-import ujson
 import dbs
 import webbrowser
 
@@ -57,12 +56,11 @@ button_2_add.grid(row=4, column=0, padx=20, pady=10)"""
 
 
 def prt(url):
-    db.create_tables()
-    body: str = db.fetchone('SELECT body FROM news WHERE link = ?', (url,))
+    text: str = db.fetchone('SELECT body FROM news WHERE link = ?', (url,))
     textbox = customtkinter.CTkTextbox(root, border_width=3, height=700, font=('Times', 20))
     textbox.grid(row=0, column=1, padx=(20, 20), pady=(20, 0), sticky="nsew")
     textbox.grid_rowconfigure(4, weight=1)
-    textbox.insert('0.0', *body)
+    textbox.insert('0.0', **text)
     label = customtkinter.CTkLabel(root, text=url, font=('Times', 25))
     label.grid(row=1, column=1, padx=(20, 20), pady=(20, 20), sticky="sw")
     label.grid_rowconfigure(4, weight=1)
@@ -72,9 +70,9 @@ def prt(url):
 
 
 def show_news(title_searh: str):
-    with open('title_link.json') as file:
-        src = ujson.load(file)
     k = 0
+    data = db.fetchall('SELECT title, link FROM news')
+    src = {x: v for x, v in data}
     for i, v in src.items():
         if title_searh.lower() in i.lower():
             if v in links:
